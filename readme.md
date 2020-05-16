@@ -1,3 +1,18 @@
+# Setup (mac)
+
+Follow instructions here: https://docs.qmk.fm/#/newbs_getting_started
+
+Configure user keyboard to hotdox
+Configure user keymap to peter-lavigne
+
+Download peter-lavigne-keymap.json from the configurator
+Reset keyboard using paper clip
+Run utils/flash.sh
+
+Alias 'flash' to run that file
+
+# Original README:
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
