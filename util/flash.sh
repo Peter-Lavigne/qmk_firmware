@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'Have you downloaded the peter-lavigne.json file and reset your keyboard?'
+echo 'Have you downloaded the peter-lavigne-keymap.json file and reset your keyboard?'
 read -p '(y/n)' response
 
 if [ $response = "y" ]; then
