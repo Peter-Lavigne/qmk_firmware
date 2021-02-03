@@ -1,16 +1,16 @@
 #!/bin/bash
 
-echo 'Have you downloaded the peter-lavigne-keymap.json file and reset your keyboard?'
+echo 'Have you downloaded the hotdox_layout_ergodox_mine.json file and reset your keyboard?'
 read -p '(y/n)' response
 
 if [ $response = "y" ]; then
   cd /Users/peter.lavigne/qmk_firmware
   echo 'Converting json...'
-  qmk json2c -o keyboards/hotdox/keymaps/peter-lavigne/keymap.c ~/Downloads/peter-lavigne-keymap.json
+  qmk json2c -o keyboards/hotdox/keymaps/peter-lavigne/keymap.c ~/Downloads/hotdox_layout_ergodox_mine.json
   echo 'Flashing...'
   qmk flash
   echo 'Cleaning up...'
-  mv ~/Downloads/peter-lavigne-keymap.json peter-lavigne-keymap.json
+  mv ~/Downloads/hotdox_layout_ergodox_mine.json peter-lavigne-keymap.json
   echo 'Saving...'
   git add -A
   git commit -m "update keyboard"
